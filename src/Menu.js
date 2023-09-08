@@ -13,7 +13,7 @@ const Menu = () => {
   const handleClick = async () => {
     try {
       const response = await axios.post(
-        "http://ec2-3-22-248-128.us-east-2.compute.amazonaws.com/predecir/",
+        "//ec2-3-22-248-128.us-east-2.compute.amazonaws.com/predecir/",
 
         [
           85, 59, 26, 72, 3, 85, 81, 26, 26, 58, 81, 81, 59, 72, 84, 88, 59, 59,
@@ -40,7 +40,7 @@ const Menu = () => {
   const handleClick2 = async () => {
     try {
       const response = await axios.post(
-        "http://ec2-3-22-248-128.us-east-2.compute.amazonaws.com/probabilidad/",
+        "//ec2-3-22-248-128.us-east-2.compute.amazonaws.com/probabilidad/",
         [10, 26, 45, 56, 68, 70, 89]
       );
       const image = "data:image/jpeg;base64," + response.data;
